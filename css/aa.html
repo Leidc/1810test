@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	 *{
+			padding: 0;
+			margin: 0;
+		}
+		li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		img{
+			vertical-align: top;
+			border: 0;
+		}
+		html{
+			font-family: "微软雅黑","宋体",Arial;
+		}
+		.a{
+			width: 500px;
+			height: 500px;
+			background-color: #f00;
+			position: relative;
+			/*overflow: hidden;*/
+		}
+		.a1{
+			width: 500px;
+			height: 500px;
+			background-color: #ff0;
+			position: absolute;
+            left: 0;
+            top: 0;
+            transition:2s;
+            opacity: 0;
+		}
+		.b{
+			width: 100px;
+			height: 500px;
+			background-color: #aab;
+			position: absolute;
+			top: 0;
+			left: -100px;
+			transition:2s;
+		}
+		.c{
+			width: 100px;
+			height: 500px;
+			background-color: #fab;
+			position: absolute;
+			top: 0;
+			right: -100px;
+			transition:2s;
+		}
+		.a:hover .a1{
+            opacity: 1
+		}
+		.a:hover .b{
+			left: 400px;
+			
+		}
+		.a:hover .c{
+			right: 400px;
+			
+		}
+
+	</style>
+</head>
+<body>
+<div class="a">
+	<div class="a1">
+		<div class="b"></div>
+		<div class="c"></div>
+	</div>
+</div>
+	
+</body>
+</html>
